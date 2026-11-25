@@ -7,9 +7,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            background-color: #fff0f6;
+        }
+        .navbar {
+            background-color: #e83e8c;
+        }
+        .card {
+            border: 2px solid #f8a5c8;
+            border-radius: 15px;
+        }
+        h3 {
+            color: #d63384;
+        }
+        .form-control:focus {
+            border-color: #e83e8c;
+            box-shadow: 0 0 0 0.2rem #f8a5c880;
+        }
+        .btn-pink {
+            background-color: #e83e8c;
+            color: white;
+        }
+        .btn-pink:hover {
+            background-color: #c2185b;
+            color: white;
+        }
+        #result {
+            background-color: #ffe3ef;
+            color: #c2185b;
+            border: 1px solid #f8a5c8;
+        }
+        footer {
+            color: #d63384;
+        }
+    </style>
 </head>
-<body class="bg-light">
-    <nav class="navbar bg-primary">
+<body>
+    <nav class="navbar">
         <div class="container">
             <span class="navbar-brand text-white fw-bold">ICT Club</span>
         </div>
@@ -31,16 +66,16 @@
                             <label for="last-name" class="form-label">Last Name</label>
                             <input type="text" id="last-name" class="form-control">
                         </div>
-                        <button class="btn btn-primary w-100" py-click="check_name">Check</button>
+                        <button class="btn btn-pink w-100" py-click="check_name">Check</button>
 
-                        <div id="result" class="alert alert-secondary text-center mt-4 mb-0">Result will appear here.</div>
+                        <div id="result" class="alert text-center mt-4 mb-0">Result will appear here.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="text-center text-muted py-3">&copy; 2026 ICT Club &middot; Seatwork 1 &middot; 2nd Quarter</footer>
+    <footer class="text-center py-3">&copy; 2026 ICT Club &middot; Seatwork 1 &middot; 2nd Quarter</footer>
 
     <script type="py" src="main.py"></script>
 </body>
